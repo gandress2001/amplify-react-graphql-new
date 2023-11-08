@@ -1,5 +1,6 @@
 describe('Authenticator:', function() {
   // Step 1: setup the application state
+  // test
   beforeEach(function() {
     cy.visit('http://localhost:3000/');
   });
