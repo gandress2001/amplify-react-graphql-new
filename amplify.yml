@@ -38,6 +38,6 @@ test:
       commands:
         # - 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
         - 'npx cypress run --spec cypress/e2e/authenticator_spec.cy.js --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,html=true,timestamp=mmddyyyy_HHMMss"'
-    # postTest:
-    #   commands:
-    #     - npx mochawesome-merge@4 cypress/report/mochawesome-report/*.json > cypress/report/mochawesome.json
+    postTest:
+      commands:
+        - npx mochawesome-merge@4 cypress/report/mochawesome-report/*.json > cypress/report/mochawesome.json
