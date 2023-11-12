@@ -2,7 +2,8 @@ describe('Authenticator:', function() {
   // Step 1: setup the application state
   // test
   beforeEach(function() {
-    cy.visit('http://localhost:3000/');
+    // cy.visit('http://localhost:3000/');
+    cy.visit('https://main.d3579jkwtkvkfo.amplifyapp.com/');
   });
   
   describe('Sign In:', () => {
