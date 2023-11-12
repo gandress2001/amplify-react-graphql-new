@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-09T18:48:36.337Z",
+    "end": "2023-11-09T18:48:45.660Z",
+    "duration": 9323,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c998268a-0b4b-4a0a-acc6-bdb84061f86e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\authenticator_spec.cy.js",
+      "file": "cypress\\e2e\\authenticator_spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7165ef53-a140-448d-af44-a38075a38acd",
+          "title": "Authenticator:",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "b9add6df-193b-432d-b211-83afab0c06b6",
+              "title": "Sign In:",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "allows a user to signin",
+                  "fullTitle": "Authenticator: Sign In: allows a user to signin",
+                  "timedOut": null,
+                  "duration": 6268,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Step 2: Take an action (Sign in)\n// cy.get(selectors.usernameInput).type(\"testapp\");\ncy.get('input[autocomplete=\"username\"]').type(\"testapp\");\n// cy.get(selectors.signInPasswordInput).type(\"password\");\ncy.get('input[autocomplete=\"current-password\"]').type(\"password\");\n// cy.get(selectors.signInButton).contains('Sign in').click();\ncy.get('.amplify-button').contains('Sign in').click();\ncy.wait(3000);\n// Step 3: Make an assertion (Check for sign-out text)\n// cy.get(selectors.signOutButton).contains('Sign out');\ncy.contains('button', 'Sign out');",
+                  "err": {},
+                  "uuid": "f95af533-7e77-4c20-8020-3be349cecfad",
+                  "parentUUID": "b9add6df-193b-432d-b211-83afab0c06b6",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "f95af533-7e77-4c20-8020-3be349cecfad"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 6268,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
